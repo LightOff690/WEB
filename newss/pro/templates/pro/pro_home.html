@@ -10,6 +10,7 @@
             <div class="alert alert-warning">
                 <h3>{{ el.anons  }}</h3>
                 <p>{{ el.full_text }}</p>
+                <a href="{% url 'pro-detail' el.id %}" class="btn btn-warning">Читать далее</a>
             </div>
         {% endfor %}
         {% else %}
