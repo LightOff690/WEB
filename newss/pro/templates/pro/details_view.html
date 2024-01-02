@@ -7,5 +7,7 @@
         <h1>{{ article.anons }}</h1>
         <p>{{ article.full_text }}</p>
         <p>{{ article.date }}</p>
+        <a href="{% url 'pro-delete' article.id %}" class="btn btn-danger">Удалить</a>
+        <a href="{% url 'pro-update' article.id %}" class="btn btn-info">Редактировать</a>
     </div>
 {% endblock %}
